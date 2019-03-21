@@ -5,7 +5,7 @@ using UnityEngine;
 public class PlatformMove : MonoBehaviour
 {
     [Range(0,100)]
-	static public float speed = 10;
+	static public float speed = 8;
 
 	//if the prefab is flatform
 	public Transform prefabFlatform;

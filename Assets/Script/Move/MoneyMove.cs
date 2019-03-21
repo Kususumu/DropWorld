@@ -5,7 +5,7 @@ using UnityEngine;
 public class MoneyMove : MonoBehaviour
 {
     [Range(0,10)]
-	static public float speed = 9;
+	static public float speed = 8;
 
     // Update is called once per frame
     void Update()

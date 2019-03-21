@@ -49,7 +49,7 @@ public class MoneyState : MonoBehaviour
     static public void SaveGame()
     {
         //
-        Debug.Log("MoneyState::StillHasProblem In SaveGame");
+        //Debug.Log("MoneyState::StillHasProblem In SaveGame");
         //
         MoneyState t = new MoneyState();
 

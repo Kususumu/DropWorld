@@ -5,13 +5,20 @@ using UnityEngine;
 public class JerryControl : MonoBehaviour
 {
     static public bool isPhone = true;
+    //static public bool isPhone = false;
+
 	private Rigidbody2D myRigidBody;
 
     //input Joystick
     public Joystick joystick;
+    //the joyStick cant be two,so it cause a lot of questions
+    //we made two other static public float in order to save horizontal and vertical
+    static public float joyHori;
+    static public float joyVerti;
 
-	//add a scrol to control range of jumpsDelta
-	[Range(100,500)]
+
+    //add a scrol to control range of jumpsDelta
+    [Range(100,500)]
 	public float jumpsDelta;
 
 	//Animator
@@ -65,6 +72,10 @@ public class JerryControl : MonoBehaviour
         //isPhone
         if (isPhone)
         {
+            //Each update we save the two number use for Weapon
+            joyHori = joystick.Horizontal;
+            joyVerti = joystick.Vertical;
+
             //joystick left < 0
             if(joystick.Horizontal < 0)
             {

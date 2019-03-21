@@ -132,6 +132,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 32f82504c663893458166664fa87db31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  joyStickBullet: {fileID: 8042074313036018498, guid: 51284f3d37e889b4895902def50d8dc0,
+    type: 3}
   speed: 20
   rb: {fileID: 894799174883790135}
 --- !u!114 &982788412967158373
