@@ -72,4 +72,17 @@ public class ButtonControl : MonoBehaviour
         MoneyState.LoadGame();
     }
 
+    public void buyBuilding()
+    {
+        HeroState.buildingNow++;
+        //Debug.Log("ButtonControl::buyBuilding:"+HeroState.buildingNow);
+    }
+
+    //still need to do better
+    public void cancelBuilding()
+    {
+        HeroState.buildingNow--;
+        //Debug.Log("ButtonControl::buyBuilding:" + HeroState.buildingNow);
+    }
+
 }

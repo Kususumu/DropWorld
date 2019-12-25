@@ -19,7 +19,10 @@ public class GunReady : MonoBehaviour
         //original x = 0.7 y = -0.5
 
         //GunMove
-        gameObject.transform.position = gunTrans.position + new Vector3(0.0f, -1.0f, 0.0f);
+        if (gunTrans)
+        {
+            gameObject.transform.position = gunTrans.position + new Vector3(0.0f, -1.0f, 0.0f);
+        }
 
         if (JerryControl.isRight)
         {

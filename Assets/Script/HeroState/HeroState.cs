@@ -4,11 +4,15 @@ using UnityEngine;
 
 public class HeroState : MonoBehaviour
 {
-
-	static public bool isAlive;
+    //Use heroState to Judge:
+    //Alive,WeaponUse,BuildingPurchasing
+    static public bool isAlive;
 	public GameObject gameOver;
 
     public float allMoveSpeed;
+
+    static public int weaponUse;
+    static public int buildingNow;
 
 	void Start()
 	{
@@ -17,6 +21,10 @@ public class HeroState : MonoBehaviour
 
 		//When hero first created,he is alive.
 		isAlive = true;
+
+        //Inisualize
+        weaponUse = 0;
+        buildingNow = 0;
 	}
     
     static public void setMoveSpeed(float s)
